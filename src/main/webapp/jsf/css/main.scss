@@ -1,0 +1,96 @@
+@import '_variables.scss';
+
+body
+{
+  background: $white;
+  margin: 0;
+}
+
+/*******************
+      ELEMENTS
+*******************/
+
+.btn-white
+{
+  border: 2px solid $white;
+  padding: 5px 10px 5px 10px;
+  border-radius: .2em;
+  -webkit-transition: all ease .8s;
+  transition: all ease .8s;
+  color: $white !important;
+
+  &:hover
+  {
+    background: $light-blue;
+    text-decoration: none;
+  }
+}
+
+.btn-transparent
+{
+  background: none;
+  border: 2px solid $white;
+  padding: 5px 10px 5px 10px;
+  border-radius: .2em;
+  -webkit-transition: all ease .8s;
+  transition: all ease .8s;
+  color: $white !important;
+
+  &:hover
+  {
+    background: $light-blue;
+    text-decoration: none;
+  }
+}
+
+/*******************
+      NAVBAR
+*******************/
+
+.navbar
+{
+  background: $blue;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  p
+  {
+    margin: 0;
+    font-size: 30px;
+    color: $white;
+  }
+}
+
+.links
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+
+  a
+  {
+    color: $black;
+  }
+}
+
+/*******************
+      CONTAINER
+*******************/
+.container-fluid
+{
+  margin-top: 80px;
+  height: 2000px;
+}
