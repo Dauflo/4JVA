@@ -15,7 +15,7 @@ public class Item extends BaseEntity implements Serializable {
     private Float price;
 
     @OneToOne
-    private Order order;
+    private UserOrder userOrder;
 
     public Item() {
     }
@@ -50,11 +50,11 @@ public class Item extends BaseEntity implements Serializable {
         this.price = price;
     }
 
-    public Order getOrder() {
-        return order;
+    public UserOrder getUserOrder() {
+        return userOrder;
     }
 
-    public void setOrder(Order order) {
-        this.order = order;
+    public void setUserOrder(UserOrder userOrder) {
+        this.userOrder = userOrder;
     }
 }

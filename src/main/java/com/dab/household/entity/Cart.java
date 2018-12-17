@@ -1,9 +1,6 @@
 package com.dab.household.entity;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,10 +12,10 @@ public class Cart extends BaseEntity implements Serializable {
     private User user;
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Order> orders;
+    private List<UserOrder> userOrders;
 
     public Cart() {
-        orders = new ArrayList<>();
+        userOrders = new ArrayList<>();
     }
 
     public User getUser() {
@@ -29,15 +26,15 @@ public class Cart extends BaseEntity implements Serializable {
         this.user = user;
     }
 
-    public List<Order> getOrders() {
-        return orders;
+    public List<UserOrder> getUserOrders() {
+        return userOrders;
     }
 
-    public void setOrders(List<Order> orders) {
-        this.orders = orders;
+    public void setUserOrders(List<UserOrder> userOrders) {
+        this.userOrders = userOrders;
     }
 
-    public void addOrder(Order order) {
-        this.orders.add(order);
+    public void addOrder(UserOrder userOrder) {
+        this.userOrders.add(userOrder);
     }
 }

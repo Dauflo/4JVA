@@ -2,7 +2,7 @@ package com.dab.household.utils;
 
 import com.dab.household.entity.Cart;
 import com.dab.household.entity.Item;
-import com.dab.household.entity.Order;
+import com.dab.household.entity.UserOrder;
 
 import java.util.List;
 
@@ -10,27 +10,29 @@ public class CartUtils {
     public static Cart generateCart(List<Item> items) {
         Cart cart = new Cart();
         for (Item item : items) {
-            if (cart.getOrders().size() == 0) {
-                Order order = new Order();
-                order.setItem(item);
-                order.setQuantity(1);
-                cart.addOrder(order);
+            if (cart.getUserOrders().size() == 0) {
+                UserOrder userOrder = new UserOrder();
+                userOrder.setItem(item);
+                userOrder.setQuantity(1L);
+                userOrder.setCart(cart);
+                cart.addOrder(userOrder);
             } else {
                 boolean found = false;
-                List<Order> orderList = cart.getOrders();
-                for (Order order : orderList) {
-                    if (order.getItem().getId() == item.getId()) {
-                        order.setQuantity(order.getQuantity() + 1);
+                List<UserOrder> userOrderList = cart.getUserOrders();
+                for (UserOrder userOrder : userOrderList) {
+                    if (userOrder.getItem().getId() == item.getId()) {
+                        userOrder.setQuantity(userOrder.getQuantity() + 1);
                         found = true;
                         break;
                     }
                 }
 
                 if (!found) {
-                    Order order = new Order();
-                    order.setItem(item);
-                    order.setQuantity(1);
-                    cart.addOrder(order);
+                    UserOrder userOrder = new UserOrder();
+                    userOrder.setItem(item);
+                    userOrder.setQuantity(1L);
+                    userOrder.setCart(cart);
+                    cart.addOrder(userOrder);
                 }
             }
         }

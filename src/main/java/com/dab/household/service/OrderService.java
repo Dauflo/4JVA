@@ -1,7 +1,7 @@
 package com.dab.household.service;
 
 import com.dab.household.dao.OrderDao;
-import com.dab.household.entity.Order;
+import com.dab.household.entity.UserOrder;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -12,15 +12,15 @@ public class OrderService {
     @EJB
     private OrderDao orderDao;
 
-    public Order addOrder(Order order) {
-        return orderDao.addOder(order);
+    public UserOrder addOrder(UserOrder userOrder) {
+        return orderDao.addOder(userOrder);
     }
 
-    public Order findOneById(Long id) {
+    public UserOrder findOneById(Long id) {
         return orderDao.findOneById(id);
     }
 
-    public List<Order> getAllOrders() {
+    public List<UserOrder> getAllOrders() {
         return orderDao.getAllOrders();
     }
 }

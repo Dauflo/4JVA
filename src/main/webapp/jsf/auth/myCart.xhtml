@@ -7,14 +7,14 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <body>
     <h1>My cart</h1>
-    <h:dataTable value="#{myCartBean.cart.orders}" var="order">
+    <h:dataTable value="#{myCartBean.cart.userOrders}" var="userOrder">
         <h:column>
             <f:facet name="header">Title</f:facet>
-            #{order.item.title}
+            #{userOrder.item.title}
         </h:column>
         <h:column>
             <f:facet name="header">Quantity</f:facet>
-            #{order.quantity}
+            #{userOrder.quantity}
         </h:column>
         <!--<h:column>-->
             <!--<h:form>-->
@@ -22,5 +22,8 @@
             <!--</h:form>-->
         <!--</h:column>-->
     </h:dataTable>
+    <h:form>
+        <h:commandButton action="#{myCartBean.buyMyCart}" value="Buy my cart"></h:commandButton>
+    </h:form>
 </body>
 </html>

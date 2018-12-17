@@ -1,24 +1,21 @@
 package com.dab.household.entity;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
-@Entity
-public class Order extends BaseEntity implements Serializable {
+@Entity()
+public class UserOrder extends BaseEntity implements Serializable {
     @ManyToOne
     private Cart cart;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     private Item item;
 
     @NotNull
-    private Integer quantity;
+    private Long quantity;
 
-    public Order() {
+    public UserOrder() {
     }
 
     public Cart getCart() {
@@ -37,11 +34,11 @@ public class Order extends BaseEntity implements Serializable {
         this.item = item;
     }
 
-    public Integer getQuantity() {
+    public Long getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(Integer quantity) {
+    public void setQuantity(Long quantity) {
         this.quantity = quantity;
     }
 }

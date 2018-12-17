@@ -1,7 +1,7 @@
 package com.dab.household.dao.jpa;
 
 import com.dab.household.dao.OrderDao;
-import com.dab.household.entity.Order;
+import com.dab.household.entity.UserOrder;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -15,25 +15,25 @@ public class JpaOrderDao implements OrderDao {
     private EntityManager em;
 
     @Override
-    public Order addOder(Order order) {
-        em.persist(order);
-        return order;
+    public UserOrder addOder(UserOrder userOrder) {
+        em.persist(userOrder);
+        return userOrder;
     }
 
     @Override
-    public Order findOneById(Long id) {
-        return em.find(Order.class, id);
+    public UserOrder findOneById(Long id) {
+        return em.find(UserOrder.class, id);
     }
 
     @Override
-    public List<Order> getAllOrders() {
-        List<Order> orders;
+    public List<UserOrder> getAllOrders() {
+        List<UserOrder> userOrders;
 
         try {
-            orders = em.createQuery("SELECT o FROM Order o").getResultList();
+            userOrders = em.createQuery("SELECT o FROM UserOrder o").getResultList();
         } catch (Exception e) {
-            orders = new ArrayList<>();
+            userOrders = new ArrayList<>();
         }
-        return orders;
+        return userOrders;
     }
 }

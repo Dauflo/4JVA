@@ -1,15 +1,15 @@
 package com.dab.household.dao;
 
-import com.dab.household.entity.Order;
+import com.dab.household.entity.UserOrder;
 
 import javax.ejb.Local;
 import java.util.List;
 
 @Local
 public interface OrderDao {
-    Order addOder(Order order);
+    UserOrder addOder(UserOrder userOrder);
 
-    Order findOneById(Long id);
+    UserOrder findOneById(Long id);
 
-    List<Order> getAllOrders();
+    List<UserOrder> getAllOrders();
 }
