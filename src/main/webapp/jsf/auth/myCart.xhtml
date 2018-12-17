@@ -6,24 +6,27 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <body>
-    <h1>My cart</h1>
-    <h:dataTable value="#{myCartBean.cart.userOrders}" var="userOrder">
-        <h:column>
-            <f:facet name="header">Title</f:facet>
-            #{userOrder.item.title}
-        </h:column>
-        <h:column>
-            <f:facet name="header">Quantity</f:facet>
-            #{userOrder.quantity}
-        </h:column>
-        <!--<h:column>-->
-            <!--<h:form>-->
-                <!--<h:commandButton action="#{myCartBean.removeToCart(item)}" value="Remote from cart"></h:commandButton>-->
-            <!--</h:form>-->
-        <!--</h:column>-->
-    </h:dataTable>
-    <h:form>
-        <h:commandButton action="#{myCartBean.buyMyCart}" value="Buy my cart"></h:commandButton>
-    </h:form>
+<h1>My cart</h1>
+<h:dataTable value="#{myCartBean.cart.userOrders}" var="userOrder">
+    <h:column>
+        <f:facet name="header">Title</f:facet>
+        #{userOrder.item.title}
+    </h:column>
+    <h:column>
+        <f:facet name="header">Quantity</f:facet>
+        #{userOrder.quantity}
+    </h:column>
+    <h:column>
+        <h:form>
+            <h:commandButton action="#{myCartBean.removeToCart(userOrder)}"
+                             value="Remote one from cart" rendered="#{userOrder.quantity > 1}"></h:commandButton>
+            <h:commandButton action="#{myCartBean.removeToCart(userOrder)}"
+                             value="Remote from cart" rendered="#{userOrder.quantity == 1}"></h:commandButton>
+        </h:form>
+    </h:column>
+</h:dataTable>
+<h:form>
+    <h:commandButton action="#{myCartBean.buyMyCart}" value="Buy my cart" rendered="#{myCartBean.cartLenght > 0}"></h:commandButton>
+</h:form>
 </body>
 </html>

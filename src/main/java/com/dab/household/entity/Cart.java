@@ -37,4 +37,8 @@ public class Cart extends BaseEntity implements Serializable {
     public void addOrder(UserOrder userOrder) {
         this.userOrders.add(userOrder);
     }
+
+    public void removeOrder(UserOrder order) {
+        this.userOrders.remove(order);
+    }
 }

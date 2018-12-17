@@ -3,6 +3,7 @@ package com.dab.household.beans;
 import com.dab.household.entity.Cart;
 import com.dab.household.entity.Item;
 import com.dab.household.entity.User;
+import com.dab.household.entity.UserOrder;
 import com.dab.household.service.CartService;
 import com.dab.household.service.UserService;
 import com.dab.household.utils.CartUtils;
@@ -47,13 +48,8 @@ public class MyCartBean {
         return cart;
     }
 
-    public void removeToCart(Item item) {
-        ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
-        try {
-            ec.redirect(((HttpServletRequest) ec.getRequest()).getRequestURI());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void removeToCart(UserOrder order) {
+        itemList.remove(order.getItem());
     }
 
     public void buyMyCart() {
@@ -62,5 +58,15 @@ public class MyCartBean {
         cart = new Cart();
         HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(true);
         session.setAttribute("cart", new ArrayList<>());
+        try {
+            FacesContext.getCurrentInstance().getExternalContext()
+                    .redirect("../auth/my-cart");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public int getCartLenght() {
+        return cart.getUserOrders().size();
     }
 }
