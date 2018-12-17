@@ -23,8 +23,8 @@ public class User extends BaseEntity implements Serializable {
     @NotNull
     private Long postalCode;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private List<Item> myChart;
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Cart> carts;
 
     public User() {
     }
@@ -95,15 +95,11 @@ public class User extends BaseEntity implements Serializable {
         this.postalCode = postalCode;
     }
 
-    public List<Item> getMyChart() {
-        return myChart;
+    public List<Cart> getCarts() {
+        return carts;
     }
 
-    public void setMyChart(List<Item> myChart) {
-        this.myChart = myChart;
-    }
-
-    public void addItem(Item item) {
-        this.myChart.add(item);
+    public void setCarts(List<Cart> carts) {
+        this.carts = carts;
     }
 }

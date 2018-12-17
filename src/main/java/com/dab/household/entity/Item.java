@@ -1,10 +1,9 @@
 package com.dab.household.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
 public class Item extends BaseEntity implements Serializable {
@@ -15,8 +14,8 @@ public class Item extends BaseEntity implements Serializable {
     @NotNull
     private Float price;
 
-    @ManyToMany(mappedBy = "myChart")
-    private List<User> users;
+    @OneToOne
+    private Order order;
 
     public Item() {
     }
@@ -51,11 +50,11 @@ public class Item extends BaseEntity implements Serializable {
         this.price = price;
     }
 
-    public List<User> getUsers() {
-        return users;
+    public Order getOrder() {
+        return order;
     }
 
-    public void setUsers(List<User> users) {
-        this.users = users;
+    public void setOrder(Order order) {
+        this.order = order;
     }
 }

@@ -6,25 +6,21 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <body>
-    <h1>Search list</h1>
-    <h:dataTable value="#{searchItemBean.items}" var="item">
+    <h1>My cart</h1>
+    <h:dataTable value="#{myCartBean.cart.orders}" var="order">
         <h:column>
             <f:facet name="header">Title</f:facet>
-            #{item.title}
+            #{order.item.title}
         </h:column>
         <h:column>
-            <f:facet name="header">Description</f:facet>
-            #{item.description}
+            <f:facet name="header">Quantity</f:facet>
+            #{order.quantity}
         </h:column>
-        <h:column>
-            <f:facet name="header">Price</f:facet>
-            #{item.price}€
-        </h:column>
-        <h:column>
-            <h:form>
-                <h:commandButton action="#{searchItemBean.addToCart(item)}" value="Add to cart"></h:commandButton>
-            </h:form>
-        </h:column>
+        <!--<h:column>-->
+            <!--<h:form>-->
+                <!--<h:commandButton action="#{myCartBean.removeToCart(item)}" value="Remote from cart"></h:commandButton>-->
+            <!--</h:form>-->
+        <!--</h:column>-->
     </h:dataTable>
 </body>
 </html>

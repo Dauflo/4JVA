@@ -1,5 +1,6 @@
 package com.dab.household.beans;
 
+import com.dab.household.entity.Item;
 import com.dab.household.entity.User;
 import com.dab.household.service.UserService;
 import com.dab.household.utils.PasswordEncryption;
@@ -8,7 +9,9 @@ import com.ocpsoft.pretty.faces.annotation.URLMapping;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
 
 @ManagedBean
 @URLMapping(id = "register", pattern = "/register", viewId = "/jsf/register.xhtml")
@@ -32,6 +35,8 @@ public class RegisterBean {
             userService.addUser(user);
             FacesContext.getCurrentInstance().getExternalContext().getSessionMap()
                     .put("user", user);
+            HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(true);
+            session.setAttribute("cart", new ArrayList<Item>());
             try {
                 FacesContext.getCurrentInstance().getExternalContext()
                         .redirect("");
