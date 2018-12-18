@@ -30,8 +30,8 @@ public class CartUtils {
                 if (!found) {
                     UserOrder userOrder = new UserOrder();
                     userOrder.setItem(item);
-                    userOrder.setQuantity(1L);
                     userOrder.setCart(cart);
+                    userOrder.setQuantity(1L);
                     cart.addOrder(userOrder);
                 }
             }

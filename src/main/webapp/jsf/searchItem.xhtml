@@ -22,5 +22,8 @@
             </h:form>
         </h:column>
     </h:dataTable>
+    <ui:repeat value="#{searchItemBean.pager}" var="page">
+        <a href="../#{searchItemBean.title}/#{page}">Page #{page}</a>
+    </ui:repeat>
 </body>
 </html>

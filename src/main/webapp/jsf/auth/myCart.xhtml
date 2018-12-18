@@ -7,7 +7,7 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <body>
 <h1>My cart</h1>
-<h:dataTable value="#{myCartBean.cart.userOrders}" var="userOrder">
+<h:dataTable value="#{myCartBean.orders}" var="userOrder">
     <h:column>
         <f:facet name="header">Title</f:facet>
         #{userOrder.item.title}
@@ -25,6 +25,9 @@
         </h:form>
     </h:column>
 </h:dataTable>
+<ui:repeat value="#{myCartBean.pager}" var="page">
+    <a href="../my-cart/#{page}">Page #{page}</a>
+</ui:repeat>
 <h:form>
     <h:commandButton action="#{myCartBean.buyMyCart}" value="Buy my cart" rendered="#{myCartBean.cartLenght > 0}"></h:commandButton>
 </h:form>

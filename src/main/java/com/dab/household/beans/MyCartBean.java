@@ -7,11 +7,11 @@ import com.dab.household.entity.UserOrder;
 import com.dab.household.service.CartService;
 import com.dab.household.service.UserService;
 import com.dab.household.utils.CartUtils;
+import com.dab.household.utils.Pager;
 import com.ocpsoft.pretty.faces.annotation.URLMapping;
 
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
-import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @ManagedBean
-@URLMapping(id = "myCart", pattern = "/auth/my-cart", viewId = "/jsf/auth/myCart.xhtml")
+@URLMapping(id = "myCart", pattern = "/auth/my-cart/#{pageId}", viewId = "/jsf/auth/myCart.xhtml")
 public class MyCartBean {
     @EJB
     private UserService userService;
@@ -33,19 +33,24 @@ public class MyCartBean {
 
     private Cart cart;
 
+    private Long pageId;
+
     public MyCartBean() {
         user = (User) FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("user");
         HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(true);
         itemList = (List<Item>) session.getAttribute("cart");
+        HttpServletRequest req = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        this.pageId = Long.parseLong(req.getParameter("pageId"));
+
     }
 
     public User getUser() {
         return user;
     }
 
-    public Cart getCart() {
+    public List<Object> getOrders() {
         cart = CartUtils.generateCart(itemList);
-        return cart;
+        return Pager.getList(cart.getUserOrders(), this.pageId);
     }
 
     public void removeToCart(UserOrder order) {
@@ -60,7 +65,7 @@ public class MyCartBean {
         session.setAttribute("cart", new ArrayList<>());
         try {
             FacesContext.getCurrentInstance().getExternalContext()
-                    .redirect("../auth/my-cart");
+                    .redirect("../auth/my-cart/1");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -68,5 +73,9 @@ public class MyCartBean {
 
     public int getCartLenght() {
         return cart.getUserOrders().size();
+    }
+
+    public List<Integer> getPager() {
+        return Pager.getPageList(cart.getUserOrders());
     }
 }

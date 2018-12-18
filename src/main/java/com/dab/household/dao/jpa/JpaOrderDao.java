@@ -1,6 +1,8 @@
 package com.dab.household.dao.jpa;
 
 import com.dab.household.dao.OrderDao;
+import com.dab.household.dao.UserDao;
+import com.dab.household.entity.Cart;
 import com.dab.household.entity.UserOrder;
 
 import javax.ejb.Stateless;
@@ -31,6 +33,20 @@ public class JpaOrderDao implements OrderDao {
 
         try {
             userOrders = em.createQuery("SELECT o FROM UserOrder o").getResultList();
+        } catch (Exception e) {
+            userOrders = new ArrayList<>();
+        }
+        return userOrders;
+    }
+
+    @Override
+    public List<UserOrder> getFromCart(Cart cart) {
+        List<UserOrder> userOrders;
+
+        try {
+            userOrders = em.createQuery("SELECT o FROM UserOrder o WHERE o.cart = :cart")
+                    .setParameter("cart", cart)
+                    .getResultList();
         } catch (Exception e) {
             userOrders = new ArrayList<>();
         }

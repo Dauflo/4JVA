@@ -9,7 +9,7 @@ public class UserOrder extends BaseEntity implements Serializable {
     @ManyToOne
     private Cart cart;
 
-    @OneToOne
+    @ManyToOne
     private Item item;
 
     @NotNull

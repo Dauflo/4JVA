@@ -1,6 +1,7 @@
 package com.dab.household.service;
 
 import com.dab.household.dao.OrderDao;
+import com.dab.household.entity.Cart;
 import com.dab.household.entity.UserOrder;
 
 import javax.ejb.EJB;
@@ -22,5 +23,9 @@ public class OrderService {
 
     public List<UserOrder> getAllOrders() {
         return orderDao.getAllOrders();
+    }
+
+    public List<UserOrder> getFromCart(Cart cart) {
+        return orderDao.getFromCart(cart);
     }
 }
