@@ -37,7 +37,7 @@
             <hr />
         </div>
         <div class="search-bar">
-            <h:inputText value="" id="search" a:placeholder="Search an item"></h:inputText>
+            <h:inputText value="" id="search" a:placeholder="Search an item"/>
             <a href="/DabHousehold-1.0-SNAPSHOT/search/" class="btn-blue btn-round" onclick="sendToSearch()" id="link"><i class="fa fa-search"></i></a>
         </div>
     </div>
@@ -46,7 +46,7 @@
     function sendToSearch()
     {
         var value = document.getElementById('search').value;
-        document.getElementById('link').href = link + value;
+        document.getElementById('link').href = link + value + '/1';
     }
 </script>
 </body>
