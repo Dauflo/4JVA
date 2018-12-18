@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<body>
+    <h:dataTable value="#{oldCartBean.oldCarts}" var="cart">
+        <h:column>
+            <a href="../#{cart.id}/1">Cart #{cart.id}</a>
+        </h:column>
+    </h:dataTable>
+
+    <ui:repeat value="#{oldCartBean.pageList}" var="page">
+        <a href="../#{oldCartDetailBean.cart.id}/#{page}">Page #{page}</a>
+    </ui:repeat>
+</body>
+</html>

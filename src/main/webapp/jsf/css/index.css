@@ -1,0 +1,12 @@
+.search-item {
+  display: flex;
+  flex-direction: column; }
+
+.search-bar {
+  display: flex;
+  flex-direction: row; }
+  .search-bar input {
+    width: 100%;
+    margin-right: 25px; }
+
+/*# sourceMappingURL=index.css.map */
