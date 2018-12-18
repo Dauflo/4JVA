@@ -2,6 +2,7 @@ package com.dab.household.service;
 
 import com.dab.household.dao.CartDao;
 import com.dab.household.entity.Cart;
+import com.dab.household.entity.User;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -22,5 +23,9 @@ public class CartService {
 
     public List<Cart> getAllCarts() {
         return cartDao.getAllCarts();
+    }
+
+    public List<Cart> getUserCarts(User user) {
+        return cartDao.getUserCarts(user);
     }
 }

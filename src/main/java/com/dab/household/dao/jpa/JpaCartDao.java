@@ -2,6 +2,7 @@ package com.dab.household.dao.jpa;
 
 import com.dab.household.dao.CartDao;
 import com.dab.household.entity.Cart;
+import com.dab.household.entity.User;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -31,6 +32,20 @@ public class JpaCartDao implements CartDao {
 
         try {
             carts = em.createQuery("SELECT c FROM Cart c").getResultList();
+        } catch (Exception e) {
+            carts = new ArrayList<>();
+        }
+        return carts;
+    }
+
+    @Override
+    public List<Cart> getUserCarts(User user) {
+        List<Cart> carts;
+
+        try {
+            carts = em.createQuery("SELECT c from Cart c WHERE c.user = :user")
+                    .setParameter("user", user)
+                    .getResultList();
         } catch (Exception e) {
             carts = new ArrayList<>();
         }
