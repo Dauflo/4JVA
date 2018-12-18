@@ -1,9 +1,10 @@
 @import '_variables.scss';
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
 body
 {
-  background: $white;
-  margin: 0;
+  background : $white;
+  margin     : 0;
 }
 
 /*******************
@@ -12,34 +13,56 @@ body
 
 .btn-white
 {
-  border: 2px solid $white;
-  padding: 5px 10px 5px 10px;
-  border-radius: .2em;
-  -webkit-transition: all ease .8s;
-  transition: all ease .8s;
-  color: $white !important;
+  border             : 2px solid $white;
+  padding            : 5px 10px 5px 10px;
+  border-radius      : .2em;
+  -webkit-transition : all ease .8s;
+  transition         : all ease .8s;
+  color              : $white !important;
 
   &:hover
   {
-    background: $light-blue;
-    text-decoration: none;
+    background      : $light-blue;
+    text-decoration : none;
   }
+}
+
+.btn-blue
+{
+  border             : 2px solid $blue;
+  padding            : 5px 10px 5px 10px;
+  border-radius      : .2em;
+  -webkit-transition : all ease .8s;
+  transition         : all ease .8s;
+  color              : $blue;
+
+  &:hover
+  {
+    background      : $blue;
+    text-decoration : none;
+    color           : #FFF;
+  }
+}
+
+.btn-round
+{
+  border-radius : 45px;
 }
 
 .btn-transparent
 {
-  background: none;
-  border: 2px solid $white;
-  padding: 5px 10px 5px 10px;
-  border-radius: .2em;
-  -webkit-transition: all ease .8s;
-  transition: all ease .8s;
-  color: $white !important;
+  background         : none;
+  border             : 2px solid $white;
+  padding            : 5px 10px 5px 10px;
+  border-radius      : .2em;
+  -webkit-transition : all ease .8s;
+  transition         : all ease .8s;
+  color              : $white !important;
 
   &:hover
   {
-    background: $light-blue;
-    text-decoration: none;
+    background      : $light-blue;
+    text-decoration : none;
   }
 }
 
@@ -49,40 +72,40 @@ body
 
 .navbar
 {
-  background: $blue;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  background      : $blue;
+  height          : 60px;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : center;
 }
 
 .logo
 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-around;
+  align-items     : center;
 
   p
   {
-    margin: 0;
-    font-size: 30px;
-    color: $white;
+    margin    : 0;
+    font-size : 30px;
+    color     : $white;
   }
 }
 
 .links
 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 200px;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-around;
+  align-items     : center;
+  width           : 200px;
 
   a
   {
-    color: $black;
+    color : $black;
   }
 }
 
@@ -91,6 +114,33 @@ body
 *******************/
 .container-fluid
 {
-  margin-top: 80px;
-  height: 2000px;
+  margin-top : 80px;
+  height     : 2000px;
+}
+
+.title
+{
+  margin : 0 auto;
+
+  h1
+  {
+    text-align : center;
+    color      : $blue;
+  }
+
+  hr
+  {
+    border     : 2px solid $blue;
+    width      : 60%;
+    background : none;
+    height     : 0;
+  }
+}
+
+hr
+{
+  border           : 0;
+  margin           : 10px auto 10px auto;
+  height           : .8px;
+  background-image : linear-gradient(to right, rgba(0, 0, 0, 0), $blue, rgba(0, 0, 0, 0));
 }
