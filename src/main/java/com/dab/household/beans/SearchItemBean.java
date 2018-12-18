@@ -61,14 +61,14 @@ public class SearchItemBean {
             cart.add(item);
             try {
                 FacesContext.getCurrentInstance().getExternalContext()
-                        .redirect("../auth/my-cart/1");
+                        .redirect("../../auth/my-cart/1");
             } catch (IOException e) {
                 e.printStackTrace();
             }
         } else {
             HttpServletResponse response = (HttpServletResponse) FacesContext.getCurrentInstance().getExternalContext().getResponse();
             try {
-                response.sendRedirect("../login");
+                response.sendRedirect("../../login");
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -69,6 +69,18 @@ body
       box-shadow : none;
     }
   }
+
+  .no-border
+  {
+    border: none;
+    float: right;
+    color: $white;
+
+    &:hover
+    {
+      color: $white;
+    }
+  }
 }
 
 #errors

@@ -15,10 +15,11 @@
 <body>
 <div class="login-box">
     <h1>Register</h1>
+    <a href="login"><h1 class="no-border">Login</h1></a>
     <h:form>
         <div class="textbox">
             <i class="fa fa-user"></i>
-            <h:inputText value="#{registerBean.user.username}" id="username" a:placeholder="Username"></h:inputText>
+            <h:inputText value="#{registerBean.user.username}" id="username" a:placeholder="Username" a:required="true"></h:inputText>
         </div>
         <div class="textbox">
             <i class="fa fa-user"></i>

@@ -6,7 +6,28 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fc573b1-4d7a-4cf4-b617-8d0594142d93" name="Default" comment="Merge branch 'master' of https://github.com/Dauflo/4JVA&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <list default="true" id="0fc573b1-4d7a-4cf4-b617-8d0594142d93" name="Default" comment="Merge branch 'master' of https://github.com/Dauflo/4JVA&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/search.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf/fonts/simplifica.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dab/household/beans/SearchItemBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dab/household/beans/SearchItemBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/login.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/login.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/register.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/register.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,28 +36,105 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="912495671">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="java" value="4" />
+          <entry key="scss" value="7" />
+          <entry key="xhtml" value="14" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="JAVA" value="4" />
+          <entry key="SCSS" value="7" />
+          <entry key="XHTML" value="14" />
           <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="9" />
+          <entry key="scss" value="144" />
+          <entry key="xhtml" value="474" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="9" />
+          <entry key="SCSS" value="144" />
+          <entry key="XHTML" value="474" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/SearchItemBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/search.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="11" selection-start-line="9" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,20 +161,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dab/household/dao/jpa/JpaUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsf/update.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dab/household/filter/AuthFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dab/household/beans/UpdateUser.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsf/register.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsf/login.xhtml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dab/household/utils/PasswordEncryption.java" />
-        <option value="$PROJECT_DIR$/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/auth/update.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dab/household/beans/UpdateUserBean.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/auth/updatePassword.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dab/household/beans/UpdatePasswordBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dab/household/beans/AddChartBean.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -112,8 +199,19 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/auth/oldCart.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/auth/myCart.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dab/household/beans/MyCartBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/dab/household/beans/SearchItemBean.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/layouts/header.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/index.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/main.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/_variables.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/search.scss" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/login.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/login.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/register.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dab/household/beans/SearchItemBean.java" />
       </list>
     </option>
   </component>
@@ -153,18 +251,20 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1937" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1060" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -223,15 +323,40 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="jsf" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Dab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsf" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsf" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dab" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545169397210" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -242,6 +367,10 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Nouveau Pc\Intellij\DabHousehold\src\main\webapp\jsf\auth" />
       <recent name="D:\Nouveau Pc\Intellij\DabHousehold\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Cours\MSC-1\4JVA - Java EE - Enterprise programming\Project\Dab\src\main\webapp\jsf" />
+      <recent name="D:\Cours\MSC-1\4JVA - Java EE - Enterprise programming\Project\Dab\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -384,6 +513,11 @@
       <workItem from="1545065653034" duration="3953000" />
       <workItem from="1545071862058" duration="14607000" />
       <workItem from="1545128499205" duration="547000" />
+      <workItem from="1545142370025" duration="2605000" />
+      <workItem from="1545146215975" duration="20000" />
+      <workItem from="1545153020399" duration="4253000" />
+      <workItem from="1545162539264" duration="697000" />
+      <workItem from="1545163568522" duration="5642000" />
     </task>
     <task id="LOCAL-00001" summary="Update Entity">
       <created>1545068357883</created>
@@ -406,11 +540,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545081575301</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge branch 'master' of https://github.com/Dauflo/4JVA&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1545130350586</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545130350586</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60830000" />
+    <option name="totallyTimeSpent" value="77304000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,11 +563,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79915434" visible="true" weight="0.21677852" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7912713" visible="true" weight="0.23288591" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Persistence" order="2" sideWeight="0.20084566" side_tool="true" visible="true" weight="0.21677852" />
+      <window_info id="Persistence" order="2" sideWeight="0.20872866" side_tool="true" visible="true" weight="0.23288591" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -435,17 +577,17 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.27092198" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.53557044" visible="true" weight="0.25248227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32998884" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32998884" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.43221477" side_tool="true" visible="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32664436" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.46442953" side_tool="true" weight="0.6099291" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32624114" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32998884" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="12" sideWeight="0.56778526" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.56778526" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -454,7 +596,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" auto_hide="true" id="Maven Projects" order="6" weight="0.6695096" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Database" order="7" weight="0.3295302" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
@@ -497,41 +639,10 @@
     <MESSAGE value="Update Entity" />
     <MESSAGE value="Fix entity" />
     <MESSAGE value="Progress on my cart &amp;&amp; item description" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress on my cart &amp;&amp; item description" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/Dauflo/4JVA&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/Dauflo/4JVA&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/test.xhtml" />
-    <entry file="file://$PROJECT_DIR$/WEB-INF/pretty-config.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/utils/PasswordEncryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/AddChartBean.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/UpdatePasswordBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/filter/AuthFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -550,13 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/AddItemBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -623,38 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/register.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/login.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/itemDescription.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -676,12 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1261#1262#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -808,36 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1792#1793#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#2385#2386#0" expanded="true" />
-            <element signature="e#2435#2436#0" expanded="true" />
-            <element signature="e#2536#2537#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/SearchItemBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-          <folding>
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -851,6 +891,102 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4539" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/layouts/header.xhtml" />
+    <entry file="file://$PROJECT_DIR$/WEB-INF/header.xhtml" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/register.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="120" lean-forward="true" selection-start-line="25" selection-start-column="120" selection-end-line="25" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="11" selection-start-line="9" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/AddItemBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#551#552#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/SearchItemBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+        </state>
       </provider>
     </entry>
   </component>

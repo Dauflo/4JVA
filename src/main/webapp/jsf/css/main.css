@@ -1,4 +1,10 @@
+/*******************
+      FONTS
+*******************/
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/simplifica.ttf"); }
 body {
   background: #f0f0f0;
   margin: 0; }
@@ -12,7 +18,8 @@ body {
   border-radius: .2em;
   -webkit-transition: all ease .8s;
   transition: all ease .8s;
-  color: #f0f0f0 !important; }
+  color: #f0f0f0 !important;
+  background: none; }
   .btn-white:hover {
     background: #5db8e6;
     text-decoration: none; }
@@ -59,6 +66,10 @@ input, textarea {
   input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
     color: transparent; }
 
+h1 {
+  font-family: Simplifica;
+  text-transform: uppercase; }
+
 /*******************
       NAVBAR
 *******************/
@@ -75,17 +86,22 @@ input, textarea {
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
-  .logo p {
+  .logo p, .logo a {
     margin: 0;
     font-size: 30px;
     color: #f0f0f0; }
+    .logo p:hover, .logo a:hover {
+      text-decoration: none; }
 
 .links {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 200px; }
+  width: 200px;
+  color: #f0f0f0; }
+  .links p {
+    margin: 0; }
   .links a {
     color: #000000; }
 

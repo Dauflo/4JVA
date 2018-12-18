@@ -1,4 +1,10 @@
+/*******************
+      FONTS
+*******************/
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/simplifica.ttf"); }
 body {
   background: url("../img/login-bg.jpg") no-repeat;
   background-size: cover; }
@@ -46,6 +52,12 @@ body {
       float: left;
       margin: 0 10px;
       box-shadow: none; }
+  .login-box .no-border {
+    border: none;
+    float: right;
+    color: #f0f0f0; }
+    .login-box .no-border:hover {
+      color: #f0f0f0; }
 
 #errors {
   border-bottom: 0 !important; }
