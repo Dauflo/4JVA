@@ -33,10 +33,9 @@
         function sendToSearch() {
             var value = document.getElementById('search').value;
             var reg = new RegExp('^[a-zA-Z0-9 -]+$');
-            if (value.match(reg))
-                document.getElementById('link').href += value + '/1';
-            else
-                document.getElementById('link').href = '';
+            var href = document.getElementById('link').href;
+            href = value.match(reg)?href+value+'/1':'';
+            document.getElementById('link').href = href;
         }
     </script>
 </ui:composition>

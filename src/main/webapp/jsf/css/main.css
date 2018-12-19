@@ -113,16 +113,31 @@ h1 {
 .container-fluid {
   margin-top: 80px; }
 
-.title {
-  margin: 0 auto; }
-  .title h1 {
-    text-align: center;
-    color: #1e8bc3; }
-  .title hr {
-    border: 2px solid #1e8bc3;
-    width: 60%;
-    background: none;
-    height: 0; }
+.container {
+  display: flex;
+  flex-direction: column; }
+  .container .title {
+    margin: 0 auto; }
+    .container .title h1 {
+      text-align: center;
+      color: #1e8bc3; }
+    .container .title hr {
+      border: 2px solid #1e8bc3;
+      width: 60%;
+      background: none;
+      height: 0; }
+  .container .pages {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .container .pages a {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-left: 10px; }
+    .container .pages p {
+      margin: 0;
+      vertical-align: center; }
 
 hr {
   border: 0;

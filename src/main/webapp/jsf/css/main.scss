@@ -168,22 +168,48 @@ h1
   margin-top : 80px;
 }
 
-.title
+.container
 {
-  margin : 0 auto;
-
-  h1
+  display: flex;
+  flex-direction: column;
+  .title
   {
-    text-align : center;
-    color      : $blue;
+    margin : 0 auto;
+
+    h1
+    {
+      text-align : center;
+      color      : $blue;
+    }
+
+    hr
+    {
+      border     : 2px solid $blue;
+      width      : 60%;
+      background : none;
+      height     : 0;
+    }
   }
 
-  hr
+  .pages
   {
-    border     : 2px solid $blue;
-    width      : 60%;
-    background : none;
-    height     : 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    a
+    {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-left: 10px;
+    }
+
+    p
+    {
+      margin: 0;
+      vertical-align: center;
+    }
   }
 }
 
