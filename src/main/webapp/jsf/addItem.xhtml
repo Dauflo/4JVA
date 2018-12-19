@@ -15,16 +15,19 @@
 <body>
 <ui:include src="header.xhtml"/>
 <div class="container-fluid">
-    <h:form>
-        <div class="title">
-            <h1>Add an article</h1>
-            <hr/>
-        </div>
-        <h:inputText value="#{addItemBean.item.title}" id="title" a:placeholder="Title"/>
-        <h:inputTextarea value="#{addItemBean.item.description}" id="description" a:placeholder="Description"/>
-        <h:inputText value="#{addItemBean.item.price}" id="price" a:placeholder="Price"/>
-        <h:commandButton action="#{addItemBean.add}" styleClass="btn-blue btn-round" value="Add item"/>
-    </h:form>
+    <div class="container">
+        <h:form>
+            <div class="title">
+                <h1>Add an article</h1>
+                <hr/>
+            </div>
+            <h:inputText value="#{addItemBean.item.title}" id="title" a:placeholder="Title"/>
+            <h:inputTextarea value="#{addItemBean.item.description}" id="description" a:placeholder="Description"/>
+            <h:inputText value="#{addItemBean.item.price}" id="price" a:placeholder="Price"/>
+            <h:commandButton action="#{addItemBean.add}" styleClass="btn-blue btn-round" value="Add item"/>
+        </h:form>
+
+    </div>
 </div>
 </body>
 </html>

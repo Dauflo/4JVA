@@ -1,5 +1,13 @@
 .container
 {
+  display: flex;
+  flex-direction: column;
+
+  .title
+  {
+    margin: 0 auto;
+  }
+
   form
   {
     display        : flex;
@@ -17,4 +25,5 @@
       padding-top : 30px;
     }
   }
+
 }

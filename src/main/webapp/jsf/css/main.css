@@ -103,7 +103,9 @@ h1 {
   .links p {
     margin: 0; }
   .links a {
-    color: #000000; }
+    color: #f0f0f0; }
+    .links a:hover {
+      text-decoration: none; }
 
 /*******************
       CONTAINER

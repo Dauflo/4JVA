@@ -19,8 +19,10 @@
             </div>
         </h:panelGroup>
         <h:panelGroup rendered="#{not empty user}">
-            <div class="links" style="width: 300px">
+            <div class="links" style="width: 450px">
                 <p>Welcome #{user.username}</p>
+                <a class="btn-white" href="/DabHousehold-1.0-SNAPSHOT/auth/update"><i class="fa fa-shopping-cart"></i>My profile</a>
+                <a class="btn-white" href="/DabHousehold-1.0-SNAPSHOT/auth/my-cart/1"><i class="fa fa-shopping-cart"></i>Cart</a>
                 <h:form>
                     <h:commandButton styleClass="btn-white" value="logout" action="#{loginBean.logoutUser}"/>
                 </h:form>

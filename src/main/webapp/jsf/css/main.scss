@@ -19,7 +19,7 @@ body
   -webkit-transition : all ease .8s;
   transition         : all ease .8s;
   color              : $white !important;
-  background: none;
+  background         : none;
 
   &:hover
   {
@@ -97,10 +97,9 @@ input, textarea
 
 h1
 {
-  font-family: Simplifica;
-  text-transform: uppercase;
+  font-family    : Simplifica;
+  text-transform : uppercase;
 }
-
 
 /*******************
       NAVBAR
@@ -131,7 +130,7 @@ h1
 
     &:hover
     {
-      text-decoration: none;
+      text-decoration : none;
     }
   }
 }
@@ -143,16 +142,21 @@ h1
   justify-content : space-around;
   align-items     : center;
   width           : 200px;
-  color: $white;
+  color           : $white;
 
   p
   {
-    margin: 0;
+    margin : 0;
   }
 
   a
   {
-    color : $black;
+    color : $white;
+
+    &:hover
+    {
+      text-decoration: none;
+    }
   }
 }
 
