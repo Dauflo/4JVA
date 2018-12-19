@@ -1,40 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="jsf/css/main.css"/>
+<link rel="stylesheet" href="jsf/css/login.css"/>
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="application/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script type="application/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <body>
-    <h1>Register a new user</h1>
+<div class="login-box">
+    <h1>Register</h1>
+    <a href="login"><h1 class="no-border">Login</h1></a>
     <h:form>
-        <h:panelGrid columns="3">
-            <h:outputLabel for="username">Username</h:outputLabel>
-            <h:inputText value="#{registerBean.user.username}" id="username"></h:inputText>
-            <br/>
-            <h:outputLabel for="firstName">First name</h:outputLabel>
-            <h:inputText value="#{registerBean.user.firstName}" id="firstName"></h:inputText>
-            <br/>
-            <h:outputLabel for="lastName">Last name</h:outputLabel>
-            <h:inputText value="#{registerBean.user.lastName}" id="lastName"></h:inputText>
-            <br/>
-            <h:outputLabel for="email">Email</h:outputLabel>
-            <h:inputText value="#{registerBean.user.email}" id="email"></h:inputText>
-            <br/>
-            <h:outputLabel for="addres">Address</h:outputLabel>
-            <h:inputText value="#{registerBean.user.address}" id="addres"></h:inputText>
-            <br/>
-            <h:outputLabel for="postCode">Postal code</h:outputLabel>
-            <h:inputText value="#{registerBean.user.postalCode}" id="postCode"></h:inputText>
-            <br/>
-            <h:outputLabel for="password">Password</h:outputLabel>
-            <h:inputSecret value="#{registerBean.user.password}" id="password"></h:inputSecret>
-            <br/>
-            <h:outputLabel for="passwordConfirmation">Password confirmation</h:outputLabel>
-            <h:inputSecret value="#{registerBean.passwordConfirmation}" id="passwordConfirmation"></h:inputSecret>
-            <br/>
-            <h:commandButton action="#{registerBean.registerUser}" value="Submit"></h:commandButton>
-        </h:panelGrid>
+        <div class="textbox">
+            <i class="fa fa-user"></i>
+            <h:inputText value="#{registerBean.user.username}" id="username" a:placeholder="Username" a:required="true"></h:inputText>
+        </div>
+        <div class="textbox">
+            <i class="fa fa-user"></i>
+            <h:inputText value="#{registerBean.user.firstName}" id="firstName" a:placeholder="First Name"></h:inputText>
+        </div>
+        <div class="textbox">
+            <i class="fa fa-user"></i>
+            <h:inputText value="#{registerBean.user.lastName}" id="lastName" a:placeholder="Last Name"></h:inputText>
+        </div>
+        <div class="textbox">
+            <i class="fa fa-envelope"></i>
+            <h:inputText value="#{registerBean.user.email}" id="email" a:placeholder="Email"></h:inputText>
+        </div>
+        <div class="textbox">
+            <i class="fa fa-home"></i>
+            <h:inputText value="#{registerBean.user.address}" id="addres" a:placeholder="Address"></h:inputText>
+        </div>
+        <div class="textbox">
+            <i class="fa fa-home"></i>
+            <h:inputText value="#{registerBean.user.postalCode}" id="postCode" a:placeholder="Postal Code"></h:inputText>
+        </div>
+        <div class="textbox">
+            <i class="fa fa-lock"></i>
+            <h:inputSecret value="#{registerBean.user.password}" id="password" a:placeholder="Password"></h:inputSecret>
+        </div>
+        <div class="textbox">
+            <i class="fa fa-lock"></i>
+            <h:inputSecret value="#{registerBean.passwordConfirmation}" id="passwordConfirmation" a:placeholder="Password Confirmation"></h:inputSecret>
+        </div>
+            <h:commandButton action="#{registerBean.registerUser}" value="Submit" styleClass="btn btn-transparent"></h:commandButton>
     </h:form>
+</div>
 </body>
 </html>

@@ -1,0 +1,196 @@
+@import '_variables.scss';
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body
+{
+  background : $white;
+  margin     : 0;
+}
+
+/*******************
+      ELEMENTS
+*******************/
+
+.btn-white
+{
+  border             : 2px solid $white;
+  padding            : 5px 10px 5px 10px;
+  border-radius      : .2em;
+  -webkit-transition : all ease .8s;
+  transition         : all ease .8s;
+  color              : $white !important;
+  background         : none;
+
+  &:hover
+  {
+    background      : $light-blue;
+    text-decoration : none;
+  }
+}
+
+.btn-blue
+{
+  border             : 2px solid $blue;
+  padding            : 5px 10px 5px 10px;
+  border-radius      : .2em;
+  -webkit-transition : all ease .8s;
+  transition         : all ease .8s;
+  color              : $blue;
+
+  &:hover
+  {
+    background      : $blue;
+    text-decoration : none;
+    color           : #FFF;
+  }
+}
+
+.btn-round
+{
+  border-radius : 45px;
+}
+
+.btn-transparent
+{
+  background         : none;
+  border             : 2px solid $white;
+  padding            : 5px 10px 5px 10px;
+  border-radius      : .2em;
+  -webkit-transition : all ease .8s;
+  transition         : all ease .8s;
+  color              : $white !important;
+
+  &:hover
+  {
+    background      : $light-blue;
+    text-decoration : none;
+  }
+}
+
+input, textarea
+{
+  border        : none;
+  border-radius : 45px;
+  padding       : 5px 15px 5px 15px;
+
+  &:hover, &:active, &:focus
+  {
+    box-shadow : 0 0 4px 2px rgba(0, 0, 0, .1);
+  }
+  &:focus::-webkit-input-placeholder
+  {
+    color : transparent;
+  }
+  &:focus:-moz-placeholder
+  {
+    color : transparent;
+  }
+  &:focus::-moz-placeholder
+  {
+    color : transparent;
+  }
+  &:focus:-ms-input-placeholder
+  {
+    color : transparent;
+  }
+}
+
+h1
+{
+  font-family    : Simplifica;
+  text-transform : uppercase;
+}
+
+/*******************
+      NAVBAR
+*******************/
+
+.navbar
+{
+  background      : $blue;
+  height          : 60px;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-between;
+  align-items     : center;
+}
+
+.logo
+{
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-around;
+  align-items     : center;
+
+  p, a
+  {
+    margin    : 0;
+    font-size : 30px;
+    color     : $white;
+
+    &:hover
+    {
+      text-decoration : none;
+    }
+  }
+}
+
+.links
+{
+  display         : flex;
+  flex-direction  : row;
+  justify-content : space-around;
+  align-items     : center;
+  width           : 200px;
+  color           : $white;
+
+  p
+  {
+    margin : 0;
+  }
+
+  a
+  {
+    color : $white;
+
+    &:hover
+    {
+      text-decoration: none;
+    }
+  }
+}
+
+/*******************
+      CONTAINER
+*******************/
+.container-fluid
+{
+  margin-top : 80px;
+}
+
+.title
+{
+  margin : 0 auto;
+
+  h1
+  {
+    text-align : center;
+    color      : $blue;
+  }
+
+  hr
+  {
+    border     : 2px solid $blue;
+    width      : 60%;
+    background : none;
+    height     : 0;
+  }
+}
+
+hr
+{
+  border           : 0;
+  margin           : 10px auto 10px auto;
+  height           : .8px;
+  background-image : linear-gradient(to right, rgba(0, 0, 0, 0), $blue, rgba(0, 0, 0, 0));
+}

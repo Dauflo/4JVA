@@ -1,0 +1,133 @@
+/*******************
+      FONTS
+*******************/
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/simplifica.ttf"); }
+body {
+  background: #f0f0f0;
+  margin: 0; }
+
+/*******************
+      ELEMENTS
+*******************/
+.btn-white {
+  border: 2px solid #f0f0f0;
+  padding: 5px 10px 5px 10px;
+  border-radius: .2em;
+  -webkit-transition: all ease .8s;
+  transition: all ease .8s;
+  color: #f0f0f0 !important;
+  background: none; }
+  .btn-white:hover {
+    background: #5db8e6;
+    text-decoration: none; }
+
+.btn-blue {
+  border: 2px solid #1e8bc3;
+  padding: 5px 10px 5px 10px;
+  border-radius: .2em;
+  -webkit-transition: all ease .8s;
+  transition: all ease .8s;
+  color: #1e8bc3; }
+  .btn-blue:hover {
+    background: #1e8bc3;
+    text-decoration: none;
+    color: #FFF; }
+
+.btn-round {
+  border-radius: 45px; }
+
+.btn-transparent {
+  background: none;
+  border: 2px solid #f0f0f0;
+  padding: 5px 10px 5px 10px;
+  border-radius: .2em;
+  -webkit-transition: all ease .8s;
+  transition: all ease .8s;
+  color: #f0f0f0 !important; }
+  .btn-transparent:hover {
+    background: #5db8e6;
+    text-decoration: none; }
+
+input, textarea {
+  border: none;
+  border-radius: 45px;
+  padding: 5px 15px 5px 15px; }
+  input:hover, input:active, input:focus, textarea:hover, textarea:active, textarea:focus {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1); }
+  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: transparent; }
+  input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
+    color: transparent; }
+  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: transparent; }
+  input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+    color: transparent; }
+
+h1 {
+  font-family: Simplifica;
+  text-transform: uppercase; }
+
+/*******************
+      NAVBAR
+*******************/
+.navbar {
+  background: #1e8bc3;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .logo p, .logo a {
+    margin: 0;
+    font-size: 30px;
+    color: #f0f0f0; }
+    .logo p:hover, .logo a:hover {
+      text-decoration: none; }
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  color: #f0f0f0; }
+  .links p {
+    margin: 0; }
+  .links a {
+    color: #f0f0f0; }
+    .links a:hover {
+      text-decoration: none; }
+
+/*******************
+      CONTAINER
+*******************/
+.container-fluid {
+  margin-top: 80px; }
+
+.title {
+  margin: 0 auto; }
+  .title h1 {
+    text-align: center;
+    color: #1e8bc3; }
+  .title hr {
+    border: 2px solid #1e8bc3;
+    width: 60%;
+    background: none;
+    height: 0; }
+
+hr {
+  border: 0;
+  margin: 10px auto 10px auto;
+  height: .8px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #1e8bc3, rgba(0, 0, 0, 0)); }
+
+/*# sourceMappingURL=main.css.map */

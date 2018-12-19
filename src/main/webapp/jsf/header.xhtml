@@ -1,0 +1,42 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <div class="navbar fixed-top">
+        <div class="logo">
+            <a href="/DabHousehold-1.0-SNAPSHOT/">LeBonDAB</a>
+        </div>
+        <div class="search-bar">
+            <h:inputText value="" id="search" a:placeholder="Search an item"/>
+            <a href="/DabHousehold-1.0-SNAPSHOT/search/" class="btn-white btn-round" onclick="sendToSearch()"
+            id="link"><i class="fa fa-search"></i></a>
+        </div>
+        <h:panelGroup rendered="#{empty user}">
+            <div class="links">
+                <a href="/DabHousehold-1.0-SNAPSHOT/login" class="btn-white">Login</a>
+                <a href="/DabHousehold-1.0-SNAPSHOT/register" class="btn-white">Register</a>
+            </div>
+        </h:panelGroup>
+        <h:panelGroup rendered="#{not empty user}">
+            <div class="links" style="width: 450px">
+                <p>Welcome #{user.username}</p>
+                <a class="btn-white" href="/DabHousehold-1.0-SNAPSHOT/auth/update"><i class="fa fa-shopping-cart"></i>My profile</a>
+                <a class="btn-white" href="/DabHousehold-1.0-SNAPSHOT/auth/my-cart/1"><i class="fa fa-shopping-cart"></i>Cart</a>
+                <h:form>
+                    <h:commandButton styleClass="btn-white" value="logout" action="#{loginBean.logoutUser}"/>
+                </h:form>
+            </div>
+        </h:panelGroup>
+    </div>
+    <script type="application/javascript">
+        function sendToSearch() {
+            var value = document.getElementById('search').value;
+            var reg = new RegExp('^[a-zA-Z0-9 -]+$');
+            if (value.match(reg))
+                document.getElementById('link').href += value + '/1';
+            else
+                document.getElementById('link').href = '';
+        }
+    </script>
+</ui:composition>

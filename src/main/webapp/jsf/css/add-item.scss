@@ -1,0 +1,20 @@
+.container
+{
+  form
+  {
+    display        : flex;
+    flex-direction : column;
+    width          : 600px;
+    margin         : 0 auto;
+
+    input, textarea
+    {
+      margin-top : 20px;
+    }
+
+    textarea
+    {
+      padding-top : 30px;
+    }
+  }
+}

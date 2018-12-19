@@ -1,0 +1,11 @@
+.container form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto; }
+  .container form input, .container form textarea {
+    margin-top: 20px; }
+  .container form textarea {
+    padding-top: 30px; }
+
+/*# sourceMappingURL=add-item.css.map */
