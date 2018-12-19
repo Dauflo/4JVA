@@ -6,21 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fc573b1-4d7a-4cf4-b617-8d0594142d93" name="Default" comment="Merge branch 'master' of https://github.com/Dauflo/4JVA&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/cart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/profile.scss" afterDir="false" />
+    <list default="true" id="0fc573b1-4d7a-4cf4-b617-8d0594142d93" name="Default" comment="Style :&#10;- cart&#10;- profile&#10;- header&#10;- search results">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/auth/myCart.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/auth/myCart.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/auth/update.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/auth/update.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/auth/updatePassword.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/auth/updatePassword.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/add-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/add-item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/add-item.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/add-item.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/add-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/add-item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/css/search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/css/search.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml" afterDir="false" />
     </list>
@@ -50,29 +37,29 @@
     <session id="912495671">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="10" />
+          <entry key="java" value="11" />
           <entry key="scss" value="15" />
-          <entry key="xhtml" value="25" />
+          <entry key="xhtml" value="29" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="10" />
+          <entry key="JAVA" value="11" />
           <entry key="SCSS" value="15" />
-          <entry key="XHTML" value="25" />
+          <entry key="XHTML" value="29" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -80,73 +67,27 @@
         <counts>
           <entry key="java" value="9" />
           <entry key="scss" value="570" />
-          <entry key="xhtml" value="1150" />
+          <entry key="txt" value="53" />
+          <entry key="xhtml" value="1160" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="9" />
+          <entry key="PLAIN_TEXT" value="53" />
           <entry key="SCSS" value="570" />
-          <entry key="XHTML" value="1150" />
+          <entry key="XHTML" value="1160" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/auth/myCart.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="18" selection-end-column="27" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/auth/update.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="42" column="113" selection-start-line="42" selection-start-column="113" selection-end-line="42" selection-end-column="113" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/auth/updatePassword.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="35" column="91" selection-start-line="35" selection-start-column="91" selection-end-line="35" selection-end-column="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/add-item.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="2" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/profile.scss">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/cart.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="238">
+              <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -221,16 +162,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/register.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dab/household/beans/SearchItemBean.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/search.scss" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/cart.scss" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/auth/myCart.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/main.scss" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/auth/updatePassword.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/auth/update.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/add-item.scss" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsf/css/profile.scss" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml" />
       </list>
     </option>
   </component>
@@ -285,6 +226,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,13 +311,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545182773856" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545182834097" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -536,7 +477,8 @@
       <workItem from="1545146215975" duration="20000" />
       <workItem from="1545153020399" duration="4253000" />
       <workItem from="1545162539264" duration="697000" />
-      <workItem from="1545163568522" duration="16280000" />
+      <workItem from="1545163568522" duration="16377000" />
+      <workItem from="1545207039683" duration="1083000" />
     </task>
     <task id="LOCAL-00001" summary="Update Entity">
       <created>1545068357883</created>
@@ -573,11 +515,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545169456755</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Style :&#10;- cart&#10;- profile&#10;- header&#10;- search results">
+      <created>1545182824440</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545182824440</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87942000" />
+    <option name="totallyTimeSpent" value="89122000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,7 +541,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7912713" visible="true" weight="0.23288591" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7912713" visible="true" weight="0.23624161" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Persistence" order="2" sideWeight="0.20872866" side_tool="true" weight="0.23288591" />
       <window_info id="Designer" order="3" />
@@ -603,7 +552,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.53557044" visible="true" weight="0.25248227" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.53557044" visible="true" weight="0.34184396" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -703,7 +652,8 @@
     <MESSAGE value="Fix entity" />
     <MESSAGE value="Progress on my cart &amp;&amp; item description" />
     <MESSAGE value="Merge branch 'master' of https://github.com/Dauflo/4JVA&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/Dauflo/4JVA&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="Style :&#10;- cart&#10;- profile&#10;- header&#10;- search results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Style :&#10;- cart&#10;- profile&#10;- header&#10;- search results" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/dao/jpa/JpaItemDao.java">
@@ -752,20 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="39" column="38" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="39" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/ItemDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/itemDescription.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -926,13 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/MyCartBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -974,13 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/UpdatePasswordBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -995,17 +917,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1019,10 +941,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/cart.scss">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/itemDescription.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="204">
+          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dab/household/beans/ItemDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/searchItem.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -1030,13 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="42" column="113" selection-start-line="42" selection-start-column="113" selection-end-line="42" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/addItem.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1056,8 +992,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/profile.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/css/cart.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsf/header.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
         </state>
       </provider>
     </entry>
