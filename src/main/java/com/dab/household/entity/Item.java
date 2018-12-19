@@ -1,6 +1,7 @@
 package com.dab.household.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
@@ -16,7 +17,7 @@ public class Item extends BaseEntity implements Serializable {
     @NotNull
     private Float price;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<UserOrder> userOrders;
 
     public Item() {

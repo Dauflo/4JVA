@@ -12,4 +12,6 @@ public interface ItemDao {
     List<Item> findItemsByTitle(String title);
 
     Item findItemById(Long id);
+
+    List<Item> findAll();
 }

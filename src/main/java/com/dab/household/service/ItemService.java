@@ -23,4 +23,8 @@ public class ItemService {
     public Item findItemById(Long id) {
         return itemDao.findItemById(id);
     }
+
+    public List<Item> findAll() {
+        return itemDao.findAll();
+    }
 }
