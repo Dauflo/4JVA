@@ -65,7 +65,7 @@ public class MyCartBean {
         session.setAttribute("cart", new ArrayList<>());
         try {
             FacesContext.getCurrentInstance().getExternalContext()
-                    .redirect("../auth/my-cart/1");
+                    .redirect("../my-cart/1");
         } catch (IOException e) {
             e.printStackTrace();
         }
