@@ -20,8 +20,6 @@ public class OldCartBean {
 
     private List<Cart> oldCarts;
 
-    private List<Integer> pageList;
-
     private User user;
 
     private Long id;
@@ -38,9 +36,7 @@ public class OldCartBean {
         return Pager.getList(oldCarts, this.id);
     }
 
-    public List<Integer> getPageList() {
-        pageList = Pager.getPageList(oldCarts);
-
-        return pageList;
+    public List<Integer> getPager() {
+        return Pager.getPageList(oldCarts);
     }
 }

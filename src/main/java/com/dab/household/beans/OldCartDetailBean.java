@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @ManagedBean
-@URLMapping(id = "oldCartDetail", pattern = "/auth/#{cartId}/#{page}", viewId = "/jsf/auth/oldCartDetail.xhtml")
+@URLMapping(id = "oldCartDetail", pattern = "/auth/detail/#{cartId}/#{page}", viewId = "/jsf/auth/oldCartDetail.xhtml")
 public class OldCartDetailBean {
     @EJB
     private CartService cartService;

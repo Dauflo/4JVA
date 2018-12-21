@@ -18,7 +18,7 @@
     </h:column>
 </h:dataTable>
 <ui:repeat value="#{oldCartDetailBean.pager}" var="page">
-    <a href="../history/#{page}">Page #{page}</a>
+    <a href="../#{oldCartDetailBean.cart.id}/#{page}">Page #{page}</a>
 </ui:repeat>
 </body>
 </html>

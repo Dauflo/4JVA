@@ -6,14 +6,14 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <body>
-    <h:dataTable value="#{oldCartBean.oldCarts}" var="cart">
-        <h:column>
-            <a href="../#{cart.id}/1">Cart #{cart.id}</a>
-        </h:column>
-    </h:dataTable>
-
-    <ui:repeat value="#{oldCartBean.pageList}" var="page">
-        <a href="../#{oldCartDetailBean.cart.id}/#{page}">Page #{page}</a>
-    </ui:repeat>
+<h1>Hello</h1>
+<h:dataTable value="#{oldCartBean.oldCarts}" var="cart">
+    <h:column>
+        <a href="../detail/#{cart.id}/1">Cart #{cart.id}</a>
+    </h:column>
+</h:dataTable>
+<ui:repeat value="#{oldCartBean.pager}" var="page">
+    <a href="../history/#{page}">Page #{page}</a>
+</ui:repeat>
 </body>
 </html>
