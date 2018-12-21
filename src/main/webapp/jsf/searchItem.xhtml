@@ -26,11 +26,11 @@
         <h:dataTable value="#{searchItemBean.items}" var="item" styleClass="table">
             <h:column>
                 <f:facet name="header">Item</f:facet>
-                <a href="../description/#{item.id}">#{item.title}</a>
+                <a href="../../description/#{item.id}">#{item.title}</a>
             </h:column>
             <h:column>
                 <f:facet name="header"></f:facet>
-                <a href="../description/#{item.id}" class="btn-blue btn-round"><i class="fa fa-plus-circle"></i></a>
+                <a href="../../description/#{item.id}" class="btn-blue btn-round"><i class="fa fa-plus-circle"></i></a>
             </h:column>
             <h:column>
                 <f:facet name="header"></f:facet>
