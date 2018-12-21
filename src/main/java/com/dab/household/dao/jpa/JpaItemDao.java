@@ -38,4 +38,17 @@ public class JpaItemDao implements ItemDao {
     public Item findItemById(Long id) {
         return em.find(Item.class, id);
     }
+
+    @Override
+    public List<Item> findAll() {
+        List<Item> items;
+
+        try {
+            items = em.createQuery("SELECT i FROM Item i").getResultList();
+        } catch (Exception e) {
+            items = new ArrayList<>();
+        }
+
+        return items;
+    }
 }
