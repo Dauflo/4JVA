@@ -1,19 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<html
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="../../jsf/css/main.css"/>
+<link rel="stylesheet" href="../../jsf/css/profile.css"/>
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="application/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script type="application/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<head>
+    <title>Profile</title>
+</head>
 <body>
-<h1>Hello</h1>
-<h:dataTable value="#{oldCartBean.oldCarts}" var="cart">
-    <h:column>
-        <a href="../detail/#{cart.id}/1">Cart #{cart.id}</a>
-    </h:column>
-</h:dataTable>
-<ui:repeat value="#{oldCartBean.pager}" var="page">
-    <a href="../history/#{page}">Page #{page}</a>
-</ui:repeat>
+<ui:include src="../header.xhtml"/>
+<div class="container-fluid">
+    <div class="container">
+        <div class="title">
+            <h1>Cart history</h1>
+            <hr/>
+        </div>
+        <div class="list-group">
+            <ui:repeat value="#{oldCartBean.oldCarts}" var="cart">
+                <a class="list-group-item list-group-item-action" href="../detail/#{cart.id}/1">Cart #{cart.id}</a>
+            </ui:repeat>
+        </div>
+        <br />
+        <div class="pages">
+            <ui:repeat value="#{oldCartBean.pager}" var="page">
+                <p>Pages : </p>
+                <a href="../history/#{page}" class="btn-blue">#{page}</a>
+            </ui:repeat>
+        </div>
+    </div>
+</div>
 </body>
 </html>

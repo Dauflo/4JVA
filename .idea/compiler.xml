@@ -13,4 +13,9 @@
       <module name="DabHousehold" target="1.7" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="DabHousehold" options="-endorseddirs &quot;D:\Cours\MSC-1\4JVA - Java EE - Enterprise programming\Project\Dab\target/endorsed&quot;" />
+    </option>
+  </component>
 </project>

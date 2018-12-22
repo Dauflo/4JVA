@@ -7,10 +7,16 @@
     display: flex;
     flex-direction: column;
     width: 600px;
-    margin: 0 auto; }
+    margin: 0 auto 50px; }
     .container form input, .container form textarea {
       margin-top: 20px; }
     .container form textarea {
       padding-top: 30px; }
+  .container .browse {
+    width: 300px;
+    margin: 0 auto; }
+  .container .back {
+    width: 100px;
+    margin-bottom: 50px; }
 
 /*# sourceMappingURL=profile.css.map */
