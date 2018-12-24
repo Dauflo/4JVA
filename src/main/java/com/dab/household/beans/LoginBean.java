@@ -10,6 +10,7 @@ import javax.ejb.EJB;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,7 +28,6 @@ public class LoginBean {
     }
 
     public void loginUser() {
-        // TODO IF LOG
         User u = userService.findUserByUsername(user.getUsername());
         if (u != null && PasswordEncryption.checkPassword(user.getPassword(), u.getPassword())) {
             FacesContext.getCurrentInstance().getExternalContext().getSessionMap()

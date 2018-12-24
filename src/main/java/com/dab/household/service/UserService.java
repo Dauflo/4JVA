@@ -5,6 +5,7 @@ import com.dab.household.entity.User;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import java.util.List;
 
 @Stateless
 public class UserService {
@@ -22,5 +23,9 @@ public class UserService {
 
     public User updateUser(User user) {
         return userDao.updateUser(user);
+    }
+
+    public List<User> findAll() {
+        return userDao.findAll();
     }
 }

@@ -23,7 +23,6 @@ public class UpdateUserBean {
     }
 
     public void update() {
-        // TODO validate
         userService.updateUser(user);
     }
 

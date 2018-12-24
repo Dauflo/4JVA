@@ -6,6 +6,8 @@ import com.dab.household.entity.User;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.ArrayList;
+import java.util.List;
 
 @Stateless
 public class JpaUserDao implements UserDao {
@@ -35,5 +37,18 @@ public class JpaUserDao implements UserDao {
     public User updateUser(User user) {
         em.merge(user);
         return user;
+    }
+
+    @Override
+    public List<User> findAll() {
+        List<User> items;
+
+        try {
+            items = em.createQuery("SELECT u FROM User u").getResultList();
+        } catch (Exception e) {
+            items = new ArrayList<>();
+        }
+
+        return items;
     }
 }

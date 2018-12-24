@@ -3,6 +3,7 @@ package com.dab.household.dao;
 import com.dab.household.entity.User;
 
 import javax.ejb.Local;
+import java.util.List;
 
 @Local
 public interface UserDao {
@@ -11,4 +12,6 @@ public interface UserDao {
     User findUserByUsername(String username);
 
     User updateUser(User user);
+
+    List<User> findAll();
 }

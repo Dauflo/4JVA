@@ -33,9 +33,7 @@ public class UpdatePasswordBean {
             if (!newPassword.isEmpty() && !confirmation.isEmpty() && newPassword.equals(confirmation)) {
                 user.setPassword(PasswordEncryption.encryption(newPassword));
                 userService.updateUser(user);
-                // TODO redirect on my account
                 try {
-                    // TODO do better
                     FacesContext.getCurrentInstance().getExternalContext()
                             .redirect("/DabHousehold-1.0-SNAPSHOT/");
                 } catch (IOException e) {

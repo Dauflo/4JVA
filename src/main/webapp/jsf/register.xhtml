@@ -26,31 +26,31 @@
         </div>
         <div class="textbox">
             <i class="fa fa-user"></i>
-            <h:inputText value="#{registerBean.user.firstName}" id="firstName" a:placeholder="First Name" a:pattern="[A-Za-zëêéè]{3,}"/>
+            <h:inputText value="#{registerBean.user.firstName}" id="firstName" a:placeholder="First Name" a:required="true" a:pattern="[A-Za-zëêéè]{3,}"/>
         </div>
         <div class="textbox">
             <i class="fa fa-user"></i>
-            <h:inputText value="#{registerBean.user.lastName}" id="lastName" a:placeholder="Last Name" a:pattern="[A-Za-z]{3,}"/>
+            <h:inputText value="#{registerBean.user.lastName}" id="lastName" a:placeholder="Last Name" a:required="true" a:pattern="[A-Za-z]{3,}"/>
         </div>
         <div class="textbox">
             <i class="fa fa-envelope"></i>
-            <h:inputText value="#{registerBean.user.email}" id="email" a:placeholder="Email" a:type="email"/>
+            <h:inputText value="#{registerBean.user.email}" id="email" a:placeholder="Email" a:required="true" a:type="email" a:pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"/>
         </div>
         <div class="textbox">
             <i class="fa fa-home"></i>
-            <h:inputText value="#{registerBean.user.address}" id="addres" a:placeholder="Address" />
+            <h:inputText value="#{registerBean.user.address}" id="addres" a:placeholder="Address" a:required="true"/>
         </div>
         <div class="textbox">
             <i class="fa fa-home"></i>
-            <h:inputText value="#{registerBean.user.postalCode}" id="postCode" a:placeholder="Postal Code" a:pattern="[0-9]{5,}"/>
+            <h:inputText value="#{registerBean.user.postalCode}" id="postCode" a:placeholder="Postal Code" a:required="true" a:pattern="[0-9]{5,}"/>
         </div>
         <div class="textbox">
             <i class="fa fa-lock"></i>
-            <h:inputSecret value="#{registerBean.user.password}" id="password" a:placeholder="Password" />
+            <h:inputSecret value="#{registerBean.user.password}" id="password" a:placeholder="Password" a:required="true"/>
         </div>
         <div class="textbox">
             <i class="fa fa-lock"></i>
-            <h:inputSecret value="#{registerBean.passwordConfirmation}" id="passwordConfirmation" a:placeholder="Password Confirmation" />
+            <h:inputSecret value="#{registerBean.passwordConfirmation}" id="passwordConfirmation" a:placeholder="Password Confirmation" a:required="true"/>
         </div>
             <h:commandButton action="#{registerBean.registerUser}" value="Submit" styleClass="btn btn-transparent" />
     </h:form>

@@ -57,18 +57,29 @@ public class MyCartBean {
         itemList.remove(order.getItem());
     }
 
-    public void buyMyCart() {
-        cart.setUser(user);
-        cartService.addCart(cart);
-        cart = new Cart();
-        HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(true);
-        session.setAttribute("cart", new ArrayList<>());
-        try {
-            FacesContext.getCurrentInstance().getExternalContext()
-                    .redirect("../my-cart/1");
-        } catch (IOException e) {
-            e.printStackTrace();
+    public void buyMyCart(boolean sure) {
+        if (sure) {
+            cart.setUser(user);
+            cartService.addCart(cart);
+            cart = new Cart();
+            HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(true);
+            session.setAttribute("cart", new ArrayList<>());
+            try {
+                FacesContext.getCurrentInstance().getExternalContext()
+                        .redirect("../my-cart/1");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+    }
+
+    public int getTotalPrice() {
+        List<UserOrder> userOrders = cart.getUserOrders();
+        int totalPrice = 0;
+        for (UserOrder u : userOrders) {
+            totalPrice += u.getQuantity() * u.getItem().getPrice();
+        }
+        return totalPrice;
     }
 
     public int getCartLenght() {

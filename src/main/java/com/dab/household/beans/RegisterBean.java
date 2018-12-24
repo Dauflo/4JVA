@@ -9,6 +9,7 @@ import com.ocpsoft.pretty.faces.annotation.URLMapping;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,7 +26,19 @@ public class RegisterBean {
     private String passwordConfirmation;
 
     public RegisterBean() {
-        // TODO send redirect if user already connected
+
+        HttpServletRequest request = (HttpServletRequest)  FacesContext.getCurrentInstance().getExternalContext()
+                .getRequest();
+        HttpSession session = request.getSession(false);
+        boolean loggedIn = session != null && session.getAttribute("user") != null;
+        if (loggedIn) {
+            try {
+                FacesContext.getCurrentInstance().getExternalContext()
+                        .redirect("");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
         user = new User();
     }
 
